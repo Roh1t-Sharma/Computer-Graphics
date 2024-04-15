@@ -3,7 +3,7 @@ import numpy as np
 import random
 
 # Define the number of points
-NUMP = 20
+NUMP = 8
 
 # Define the point structure using a dictionary
 points = [{'x': 0, 'y': 0, 'angle': 0} for _ in range(NUMP)]
