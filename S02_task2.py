@@ -9,8 +9,8 @@ screen = pygame.display.set_mode((window_width, window_height))
 pygame.display.set_caption('Timed Circle Animation')
 
 radius = 100
-max_radius = window_width//2
-change = 1
+max_radius = window_height//2
+change = 2
 circle_color = (0, 255, 255)
 
 clock = pygame.time.Clock()
@@ -28,7 +28,7 @@ while running:
 
     radius += change
 
-    if radius <= 1 or radius >= max_radius:
+    if radius <= 20 or radius >= max_radius:
         change = -change
 
     draw_circle(radius)
